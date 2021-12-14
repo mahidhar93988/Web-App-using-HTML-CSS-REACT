@@ -1,23 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width">
-<title>Designing Web App using HTML/CSS/REACT</title>
-<link rel="stylesheet" href="style.css" />
-<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-<!-- Don't use this in production: -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Designing Web App using HTML/CSS/REACT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
     <div id="root"></div>
     <script type="text/babel">
-//React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
-
-</script>
-<!--
+      //React Code here
+      var container_1a = React.createElement(
+        "div",
+        { className: "container-1a" },
+        null,
+        null
+      );
+      var container_1b = React.createElement(
+        "div",
+        { className: "container-1b" },
+        null,
+        null
+      );
+      var container_1 = React.createElement(
+        "div",
+        { className: "container-1" },
+        container_1a,
+        container_1b,
+        null
+      );
+      var container_2 = React.createElement(
+        "div",
+        { className: "container-2" },
+        null,
+        null
+      );
+      var container_3a = React.createElement(
+        "div",
+        { className: "container-3a" },
+        null,
+        null
+      );
+      var container_3b = React.createElement(
+        "div",
+        { className: "container-3b" },
+        null,
+        null
+      );
+      var container_3c = React.createElement(
+        "div",
+        { className: "container-3c" },
+        null,
+        null
+      );
+      var container_3 = React.createElement(
+        "div",
+        { className: "container-3" },
+        container_3a,
+        container_3b,
+        container_3c,
+        null
+      );
+      var webapp = React.createElement(
+        "div",
+        { className: "main-container" },
+        container_1,
+        container_2,
+        container_3,
+        null
+      );
+      ReactDOM.render(webapp, document.getElementById("root"));
+    </script>
+    <!--
      Note: this page is a great way to try React but it's not suitable for production.
      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
      Read this section for a production-ready setup with JSX:
@@ -27,5 +85,5 @@
      You can also use React without JSX, in which case you can remove Babel:
      https://reactjs.org/docs/react-without-jsx.html
    -->
-</body>
+  </body>
 </html>
